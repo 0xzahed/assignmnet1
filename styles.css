@@ -5,7 +5,6 @@ body {
   min-height: 100vh;
 }
 
-
 /* share color */
 .primary-color {
   color: #4E47FF;
@@ -21,6 +20,19 @@ body {
   border: none;
   cursor: pointer;
   z-index: 1;
+}
+/* button hover effect */
+.btn-design:hover {
+  background-color: #3fb0a4;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(78, 71, 255, 0.15);
+  transition: background;
+}
+
+.btn-design:active {
+  background-color: #3fb0a4;
+  color: #fff;
+  font-size: 20px;
 }
 
 /* font inter black */
@@ -40,10 +52,7 @@ body {
 
 header {
   background-image: url(./Assets/Hero-bg.png);
-  /* height: 698px; */
   margin: 0;
-  /* width: 100vh; */
-  /* max-width: 100vh; */
   height: 698px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,7 +123,7 @@ nav ul li {
 .productive-card {
   width: 1140px;
   height: 306px;
-  background: #e5e6fa;
+  background: rgba(78, 71, 255, 0.1);
   border-radius: 24px;
   display: flex;
   flex-direction: column;
@@ -239,6 +248,7 @@ nav ul li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 14px;
 }
 
 .focus-title {
@@ -338,3 +348,42 @@ nav ul li {
     min-height: 90px;
 }
 
+/* Footer Section */
+.footer-section {
+    width: 100%;
+    background: #fff;
+    padding: 64px 0 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.footer-description {
+    color: #8987A1;
+    font-size: 20px;
+    text-align: center;
+    width: 600px;
+    margin-bottom: 24px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.footer-link {
+    color: #8987A1;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+}
